@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 'use strict';
 
 var convert = require('../src/convert');
