@@ -21,7 +21,7 @@ module.exports = function convertTumblr(options, callback) {
             var bodyField = post.body || post.caption || post.text || post.description;
             var pmNode = bodyField && parse(bodyField, options.schema);
             return {
-                raw: post,
+                tumblr: post,
                 prosemirror: options.json && pmNode ? pmNode.toJSON() : pmNode
             };
         }));
