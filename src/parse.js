@@ -1,8 +1,8 @@
 'use strict';
 
 var jsdom = require('jsdom').jsdom;
-var fromHTML = require('@rexxars/prosemirror-dist/dist/format').fromHTML;
-var defaultSchema = require('@rexxars/prosemirror-dist/dist/model').defaultSchema;
+var fromHTML = require('prosemirror/dist/format').fromHTML;
+var defaultSchema = require('prosemirror/dist/model').defaultSchema;
 
 var doc;
 
