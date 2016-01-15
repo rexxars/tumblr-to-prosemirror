@@ -1,6 +1,6 @@
 {
   "name": "tumblr-to-prosemirror",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Convert tumblr blog entries to prosemirror format",
   "main": "src/convert.js",
   "scripts": {
