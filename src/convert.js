@@ -18,8 +18,16 @@ module.exports = function convertTumblr(options, callback) {
         }
 
         callback(null, posts.map(function parsePost(post) {
-            var bodyField = post.body || post.caption || post.text || post.description;
+            var bodyField = (
+                post.body ||
+                post.caption ||
+                post.text ||
+                post.description ||
+                post.summary
+            );
+
             var pmNode = bodyField && parse(bodyField, options.schema);
+
             return {
                 tumblr: post,
                 prosemirror: options.json && pmNode ? pmNode.toJSON() : pmNode
